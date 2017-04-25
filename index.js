@@ -1,12 +1,8 @@
 const Thopter = require('./lib/bot');
 
 
-if (!process.env.SLACK_TOKEN) {
-  console.log('Error: Specify SLACK_TOKEN in environment');
-  process.exit(1);
-}
-
 new Thopter(
-  process.env.SLACK_TOKEN,
+  '341972c5-7b91-4964-b9d2-df3f6ae015e0',
+  'gtLLdNvqjWExBYs3o2ZCSM8',
   process.env.DEBUG === 'true'
 );
